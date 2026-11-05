@@ -1,0 +1,28 @@
+{
+  "name": "tzuchi-indonesia-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Yayasan Buddha Tzu Chi Indonesia marketing website",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "check:source": "node scripts/check.mjs",
+    "verify": "npm run check:source && npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.0"
+  }
+}
